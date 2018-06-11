@@ -1,0 +1,8 @@
+NUGET
+  remote: https://api.nuget.org/v3/index.json
+    FSharp.Charting (0.91.1)
+    FSharp.Core (4.5) - restriction: && (< net40) (< portable-net45+win8+wp8+wpa81)
+    FSharp.Data (2.4.6)
+      FSharp.Core (>= 4.0.0.1) - restriction: && (< net40) (< portable-net45+win8+wp8+wpa81)
+      Zlib.Portable (>= 1.11) - restriction: || (&& (< net40) (>= portable-net45+win8)) (&& (< net40) (< portable-net45+win8) (>= portable-net45+win8+wp8+wpa81))
+    Zlib.Portable (1.11) - restriction: || (&& (< net40) (>= portable-net45+win8)) (&& (< net40) (< portable-net45+win8) (>= portable-net45+win8+wp8+wpa81))
