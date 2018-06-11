@@ -1,0 +1,4 @@
+source https://api.nuget.org/v3/index.json
+
+nuget FSharp.Data ~> 2.4.3
+nuget FSharp.Charting ~> 0.91.1
