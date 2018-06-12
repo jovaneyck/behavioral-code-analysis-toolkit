@@ -1,0 +1,5 @@
+language,filename,blank,comment,code
+XML,./packages/NHibernate.3.4.0.4000/lib/Net35/NHibernate.xml,292,2,43962
+JavaScript,./packages/jQuery.UI.Combined.1.9.2/Content/Scripts/jquery-ui-1.9.2.js,2092,1166,11654
+SQL,./Server/Database.BEL/Schemas/02-MITHRA_BEL/Migrations/01-Pre-Install/02.01.06.Triggers.sql,988,254,10500
+C#,./Intranet/Web/UI/Agreements/AllocationAgreement/Default.aspx.cs,434,119,2613

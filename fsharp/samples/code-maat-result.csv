@@ -1,0 +1,10 @@
+entity,n-authors,n-revs
+/MITHRA/030 Development/Dev/Server/Tests/UnitTests/Fluxys.Mithra.Server.UnitTests.csproj,10,191
+/MITHRA/030 Development/Dev/Server/Endpoints/Fluxys.Mithra.Server.Endpoints.csproj,10,130
+/MITHRA/030 Development/Dev/Server/Setup/MithraServer/Install/Web.template.config,9,116
+/MITHRA/030 Development/Dev/Server/Hosts/Web.BEL/Web.config,9,113
+/MITHRA/030 Development/Dev/Server/Setup/MithraTNPServer/Install/Web.template.config,9,98
+/MITHRA/030 Development/Dev/Server/Endpoints/packages.config,9,91
+/MITHRA/030 Development/Dev/Server/Endpoints.BEL/Fluxys.Mithra.Server.Endpoints.BEL.csproj,8,98
+/MITHRA/030 Development/Dev/Server/Endpoints.DEU/Fluxys.Mithra.Server.Endpoints.DEU.csproj,8,93
+/MITHRA/030 Development/Dev/Server/Hosts/Web.DEU/Web.config,8,91
