@@ -17,11 +17,11 @@ let [<Literal>] codemaatresultsSample = @"..\samples\code-maat-result.csv"
 type CodeMaatResultsCsv = CsvProvider<codemaatresultsSample>
 type CodeMaatResult = { Entity : string; NumberCommits : int}
 let commitInformation =
-    CodeMaatResultsCsv.Load(@"..\..\case-studies\cims\in\cims-maat.log").Rows
+    CodeMaatResultsCsv.Load(@"..\..\case-studies\processrepo\in\processrepo-maat.log").Rows
     |> Seq.map (fun r -> { Entity = r.Entity; NumberCommits = r.``N-revs``})
     |> Seq.filter (fun row -> exclusionFilter row.Entity)
     |> Seq.sortByDescending (fun r -> r.NumberCommits)
-    |> Seq.take 1000
+    //|> Seq.take 1000
 
 let c =
     Chart.Point(

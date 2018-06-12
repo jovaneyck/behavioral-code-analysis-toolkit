@@ -16,7 +16,7 @@ let exclusionFilter (data : string) =
     |> List.exists (fun pattern -> data.Contains(pattern)) |> not
 
 type ClocCsv = CsvProvider< @"..\samples\cloc.csv">
-let cloc = ClocCsv.Load(@"..\..\case-studies\cims\in\cims-cloc.log")
+let cloc = ClocCsv.Load(@"..\..\case-studies\processrepo\in\processrepo-cloc.log")
 type LocResult = { FileName : string; LinesOfCode : int }
 
 let locInformation =
@@ -31,7 +31,7 @@ let [<Literal>] codemaatresults = @"..\samples\code-maat-result.csv"
 type CodeMaatResultsCsv = CsvProvider<codemaatresults>
 type CodeMaatResult = { Entity : string; NumberCommits : int}
 let commitInformation = 
-    CodeMaatResultsCsv.Load(@"..\..\case-studies\cims\in\cims-maat.log").Rows
+    CodeMaatResultsCsv.Load(@"..\..\case-studies\processrepo\in\processrepo-maat.log").Rows
     |> Seq.map (fun r -> { Entity = "./" + r.Entity; NumberCommits = r.``N-revs``})
     |> Seq.filter (fun row -> exclusionFilter row.Entity)
     |> Seq.sortByDescending (fun r -> r.NumberCommits)
@@ -72,6 +72,15 @@ let toPlotpoint cases =
     |> Seq.choose id
 
 let points = toPlotpoint extremeCases |> Seq.toList
+
+let [<Literal>] d3Sample = @"[{ ""entity"" : "":the:entity:name:"", ""linesofcode"" : 1337, ""numbercommits"" : 666 }]"
+type D3Input = JsonProvider<d3Sample>
+let d3Points =
+    points
+    |> Seq.map (fun p -> D3Input.Root(p.Commits.Entity, p.LinesOfCode.LinesOfCode, p.Commits.NumberCommits))
+    |> Seq.map (sprintf "%A")
+    |> String.concat ", "
+    |> (fun lines -> sprintf "[%s]" lines)
 
 let c =
     Chart.Point(
