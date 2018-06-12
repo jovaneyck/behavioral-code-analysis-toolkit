@@ -7,13 +7,16 @@ open FSharp.Charting
 let excludePatterns = [
     ".idea"
     ".iml"
+    "pom.xml"
+    "/target/"
+    "test/import inbound asn containers/asn-jms.xml"
 ]
 let exclusionFilter (data : string) = 
     excludePatterns 
     |> List.exists (fun pattern -> data.Contains(pattern)) |> not
 
 type ClocCsv = CsvProvider< @"..\samples\cloc.csv">
-let cloc = ClocCsv.Load(@"..\..\case-studies\cims\in\cims-declaration-api-cloc.log")
+let cloc = ClocCsv.Load(@"..\..\case-studies\cims\in\cims-cloc.log")
 type LocResult = { FileName : string; LinesOfCode : int }
 
 let locInformation =
@@ -28,7 +31,7 @@ let [<Literal>] codemaatresults = @"..\samples\code-maat-result.csv"
 type CodeMaatResultsCsv = CsvProvider<codemaatresults>
 type CodeMaatResult = { Entity : string; NumberCommits : int}
 let commitInformation = 
-    CodeMaatResultsCsv.Load(@"..\..\case-studies\cims\in\cims-declaration-api-maat.log").Rows
+    CodeMaatResultsCsv.Load(@"..\..\case-studies\cims\in\cims-maat.log").Rows
     |> Seq.map (fun r -> { Entity = "./" + r.Entity; NumberCommits = r.``N-revs``})
     |> Seq.filter (fun row -> exclusionFilter row.Entity)
     |> Seq.sortByDescending (fun r -> r.NumberCommits)
