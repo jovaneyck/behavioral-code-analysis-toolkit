@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+    circle {
+        fill: rgb(31, 119, 180);
+        fill-opacity: .25;
+        stroke: rgb(31, 119, 180);
+        stroke-width: 1px;
+    }
+
+    .leaf circle {
+        fill-opacity: 1;
+    }
+
+    text {
+        font: 10px sans-serif;
+        text-anchor: middle;
+    }
+
+</style>
+<div style="display: flex; justify-content: center"> <svg width="960" height="960"></svg></div>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+
+    var svg = d3.select("svg"),
+        diameter = +svg.attr("width"),
+        g = svg.append("g").attr("transform", "translate(2,2)"),
+        format = d3.format(",d");
+
+    var pack = d3.pack()
+        .size([diameter - 4, diameter - 4]);
+
+    d3.json("meethra.json", function(error, root) {
+        if (error) throw error;
+
+        var minValue;
+        var divideByValue;
+
+        function initValues(childs) {
+            var max = calcMax(childs);
+            var min = calcMin(childs);
+
+
+
+            minValue = min;
+            divideByValue = max - min;
+        }
+
+        function getColor(value) {
+            console.log(value + '-' + minValue + '/' + divideByValue );
+            var rgb = 255 - (((value - minValue) / divideByValue) * 255);
+            return 'rgb(' + [rgb, rgb, rgb].join(',')+ ');';
+        }
+
+        function calcMin(array) {
+            var min = Number.MAX_VALUE;
+            array.forEach(function (val) {
+                min = val.numbercommits < min ? val.numbercommits : min;
+            });
+            return min;
+        }
+
+        function calcMax(array) {
+            var max = 0;
+            array.forEach(function (val) {
+                max = val.numbercommits > max ? val.numbercommits : max;
+            });
+            return max;
+        }
+
+        initValues(root.children);
+
+        root = d3.hierarchy(root)
+            .sum(function(d) { return d.linesofcode; })
+            .sort(function(a, b) { return b.value - a.value; });
+
+        var node = g.selectAll(".node")
+            .data(pack(root).descendants())
+            .enter().append("g")
+            .attr("class", function(d) { return d.children ? "node" : "leaf node"; })
+            .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+
+        node.append("title")
+            .text(function(d) { return d.data.entity + "\n" + format(d.value); });
+
+        node.append("circle")
+            .attr("r", function(d) { return d.r; })
+            .attr("style", function(d) { return 'fill: ' + getColor(d.data.numbercommits)});
+
+
+        node.filter(function(d) { return !d.children; }).append("text")
+            .attr("dy", "0.3em")
+            .text(function(d) {
+                var fileNameAr = d.data.entity.split('/');
+                var fileName = fileNameAr[fileNameAr.length -1];
+                return fileName.substring(0, d.r / 3); });
+    });
+
+
+</script>
