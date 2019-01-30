@@ -5,18 +5,20 @@ open FSharp.Charting
 
 
 let excludePatterns = [
-    ".idea"
-    ".iml"
-    "pom.xml"
-    "/target/"
-    "test/import inbound asn containers/asn-jms.xml"
+    "/Setup/MithraServer"
+    "/packages/"
+    "/bin/"
+    "/Database.BEL/"
+    ".csproj"
+    ".json"
+    ".config"
 ]
 let exclusionFilter (data : string) = 
     excludePatterns 
     |> List.exists (fun pattern -> data.Contains(pattern)) |> not
 
 type ClocCsv = CsvProvider< @"..\samples\cloc.csv">
-let cloc = ClocCsv.Load(@"..\..\case-studies\processrepo\in\processrepo-cloc.log")
+let cloc = ClocCsv.Load(@"..\..\case-studies\mithra\in\cloc.csv")
 type LocResult = { FileName : string; LinesOfCode : int }
 
 let locInformation =
@@ -26,12 +28,12 @@ let locInformation =
     |> Seq.sortByDescending (fun r -> r.Code)
     |> Seq.map (fun r -> { LinesOfCode = r.Code; FileName = r.Filename})
 
-//docker run -v C:/Users/Jo.VanEyck/Desktop/tech-debt/mithra/:/data -it code-maat-app -c tfs -l /data/tfslog.log > code-maat-result.csv
+//λ java -jar code-maat-1.1-SNAPSHOT-standalone.jar -c git2 -l "C:\Users\Jo.VanEyck\Desktop\behavioral-code-analysis-toolkit\behavioral-code-analysis-toolkit\case-studies\mithra\in\git.log" > codemaat-results.csv
 let [<Literal>] codemaatresults = @"..\samples\code-maat-result.csv"
 type CodeMaatResultsCsv = CsvProvider<codemaatresults>
 type CodeMaatResult = { Entity : string; NumberCommits : int}
 let commitInformation = 
-    CodeMaatResultsCsv.Load(@"..\..\case-studies\processrepo\in\processrepo-maat.log").Rows
+    CodeMaatResultsCsv.Load(@"..\..\case-studies\mithra\in\codemaat-results.csv").Rows
     |> Seq.map (fun r -> { Entity = "./" + r.Entity; NumberCommits = r.``N-revs``})
     |> Seq.filter (fun row -> exclusionFilter row.Entity)
     |> Seq.sortByDescending (fun r -> r.NumberCommits)

@@ -1,391 +1,277 @@
 {
   "name:": "Meethra",
-  "children": [
-    {
-      "entity": "./Server/Application/Auctions/AuctioningFacade.cs",
-      "linesofcode": 2777,
-      "numbercommits": 269
-    },
-    {
-      "entity": "./Intranet/Web/UI/Agreements/AllocationAgreement/Default.aspx.cs",
-      "linesofcode": 2613,
-      "numbercommits": 83
-    },
-    {
-      "entity": "./Server/Resources/Services/AggregatingReceivingStationCapacityDistributionService/AggregatedReceivingStationCapacityDistributionService.cs",
-      "linesofcode": 2335,
-      "numbercommits": 13
-    },
-    {
-      "entity": "./Server/Application/Requests/AssignmentRequestFacade.cs",
-      "linesofcode": 1974,
-      "numbercommits": 110
-    },
-    {
-      "entity": "./Intranet/Web/UI.BEL/Agreements/MasterAgreement/Default.aspx.cs",
-      "linesofcode": 1951,
-      "numbercommits": 20
-    },
-    {
-      "entity": "./Server/Application.BEL/Requests/RequestFacade.cs",
-      "linesofcode": 1903,
-      "numbercommits": 87
-    },
-    {
-      "entity": "./Server/Domain/Auctions/DomainServices/AuctionDomainService.cs",
-      "linesofcode": 1380,
-      "numbercommits": 137
-    },
-    {
-      "entity": "./Server/Reports/Allstars/AllstarsAllocations.Designer.cs",
-      "linesofcode": 1348,
-      "numbercommits": 2
-    },
-    {
-      "entity": "./Server/Application/BusinessParties/BusinessPartyFacade.cs",
-      "linesofcode": 1188,
-      "numbercommits": 33
-    },
-    {
-      "entity": "./Server/Application/Agreements/AllocationAgreementFacade.cs",
-      "linesofcode": 1163,
-      "numbercommits": 108
-    },
-    {
-      "entity": "./Server/Domain/Stocks/StockDomainService.cs",
-      "linesofcode": 1093,
-      "numbercommits": 54
-    },
-    {
-      "entity": "./Intranet/Web/UI.BEL/Offers/Offer/Default.aspx.cs",
-      "linesofcode": 1012,
-      "numbercommits": 16
-    },
-    {
-      "entity": "./Server/Domain/Auctions/DomainServices/DEU/AuctionDomainService.cs",
-      "linesofcode": 1002,
-      "numbercommits": 43
-    },
-    {
-      "entity": "./Server/Application.DEU/Messages/MessageFacade.cs",
-      "linesofcode": 1001,
-      "numbercommits": 77
-    },
-    {
-      "entity": "./Intranet/Web/UI.BEL/Agreements/ConnectionAgreement/Default.aspx.cs",
-      "linesofcode": 963,
-      "numbercommits": 4
-    },
-    {
-      "entity": "./Server/Application/Messages/MessageFacade.cs",
-      "linesofcode": 911,
-      "numbercommits": 99
-    },
-    {
-      "entity": "./Intranet/Web/UI/Styles/Mithra.css",
-      "linesofcode": 910,
-      "numbercommits": 39
-    },
-    {
-      "entity": "./Server/Application.BEL/QualityConversionH2L/QualityConversionH2LFacade.cs",
-      "linesofcode": 878,
-      "numbercommits": 13
-    },
-    {
-      "entity": "./Intranet/Web/UI/Scripts/controls.js",
-      "linesofcode": 878,
-      "numbercommits": 4
-    },
-    {
-      "entity": "./Intranet/Web/UI.BEL/Requests/Reduction/ReductionServiceManager.ascx.cs",
-      "linesofcode": 849,
-      "numbercommits": 28
-    },
-    {
-      "entity": "./Server/Application/Agreements/MasterAgreementFacade.cs",
-      "linesofcode": 828,
-      "numbercommits": 11
-    },
-    {
-      "entity": "./Intranet/Web/UI.BEL/Requests/Request/Default.aspx.cs",
-      "linesofcode": 794,
-      "numbercommits": 25
-    },
-    {
-      "entity": "./Server/Endpoints.BEL/Generic/CapacityService.cs",
-      "linesofcode": 781,
-      "numbercommits": 15
-    },
-    {
-      "entity": "./Server/Tests/TestData/DomainTypesTestData.cs",
-      "linesofcode": 775,
-      "numbercommits": 13
-    },
-    {
-      "entity": "./Intranet/Web/UI/Agreements/GasExchangeAgreement/Default.aspx.cs",
-      "linesofcode": 775,
-      "numbercommits": 7
-    },
-    {
-      "entity": "./Intranet/Resources/Services/AgreementService/AgreementService.cs",
-      "linesofcode": 771,
-      "numbercommits": 15
-    },
-    {
-      "entity": "./Intranet/Web/UI.BEL/Products/Product/Default.aspx",
-      "linesofcode": 763,
-      "numbercommits": 9
-    },
-    {
-      "entity": "./Intranet/Web/UI.BEL/Requests/Reduction/Offer/Default.aspx.cs",
-      "linesofcode": 759,
-      "numbercommits": 14
-    },
-    {
-      "entity": "./Intranet/Web/UI.BEL/Offers/Offer/TransmissionServiceManager.ascx.cs",
-      "linesofcode": 721,
-      "numbercommits": 16
-    },
-    {
-      "entity": "./Intranet/Web/UI/Scripts/jquery.tablesorter.js",
-      "linesofcode": 719,
-      "numbercommits": 2
-    },
-    {
-      "entity": "./Extranet/Web/UI/Scripts/jquery.tablesorter.js",
-      "linesofcode": 719,
-      "numbercommits": 1
-    },
-    {
-      "entity": "./Intranet/Web/UI/Scripts/jquery.tablesorter-original.js",
-      "linesofcode": 707,
-      "numbercommits": 1
-    },
-    {
-      "entity": "./Server/Tests/UnitTests.Domain/Requests/TradeNotification.Xml/GivenATradeNotificationXmlBase.cs",
-      "linesofcode": 700,
-      "numbercommits": 41
-    },
-    {
-      "entity": "./Intranet/Web/UI/Scripts/ui.dropdownchecklist-1.4-adapted.js",
-      "linesofcode": 699,
-      "numbercommits": 1
-    },
-    {
-      "entity": "./Server/Domain/Auctions/DomainServices/BEL/AuctionDomainService.cs",
-      "linesofcode": 694,
-      "numbercommits": 35
-    },
-    {
-      "entity": "./Server/Application.BEL/Agreements/MasterAgreementFacade.cs",
-      "linesofcode": 689,
-      "numbercommits": 23
-    },
-    {
-      "entity": "./Intranet/Web/UI.DEU/Agreements/MasterAgreement/Default.aspx.cs",
-      "linesofcode": 689,
-      "numbercommits": 12
-    },
-    {
-      "entity": "./Server/Domain/DomainServices/StockDomainService.cs",
-      "linesofcode": 686,
-      "numbercommits": 1
-    },
-    {
-      "entity": "./Intranet/Web/UI.BEL/Requests/Assignment/Default.aspx.cs",
-      "linesofcode": 684,
-      "numbercommits": 17
-    },
-    {
-      "entity": "./Intranet/Web/UI.BEL/Products/Product/Default.aspx.cs",
-      "linesofcode": 683,
-      "numbercommits": 11
-    },
-    {
-      "entity": "./Server/Application/Stocks/StockFacade.cs",
-      "linesofcode": 675,
-      "numbercommits": 37
-    },
-    {
-      "entity": "./Intranet/Web/UI.DEU/BusinessParties/Contacts/Default.aspx.cs",
-      "linesofcode": 672,
-      "numbercommits": 3
-    },
-    {
-      "entity": "./Server/Application.BEL/TransmissionServices/TransmissionServiceFacade.cs",
-      "linesofcode": 669,
-      "numbercommits": 39
-    },
-    {
-      "entity": "./Server/Domain/DomainServices/AuctionDomainService.cs",
-      "linesofcode": 645,
-      "numbercommits": 1
-    },
-    {
-      "entity": "./Server/Application/Agreements/GasExchangeAgreementFacade.cs",
-      "linesofcode": 641,
-      "numbercommits": 2
-    },
-    {
-      "entity": "./Intranet/Web/UI.BEL/Requests/CapacityConversion/Default.aspx.cs",
-      "linesofcode": 633,
-      "numbercommits": 29
-    },
-    {
-      "entity": "./Intranet/Web/UI.BEL/BusinessParties/Contacts/Default.aspx.cs",
-      "linesofcode": 632,
-      "numbercommits": 4
-    },
-    {
-      "entity": "./Server/Infrastructure/Rules/RuleCode.cs",
-      "linesofcode": 240,
-      "numbercommits": 83
-    },
-    {
-      "entity": "./Server/Application/Requests/CapacityConversionRequestFacade.cs",
-      "linesofcode": 627,
-      "numbercommits": 73
-    },
-    {
-      "entity": "./Server/Resources/Services/BusinessParametersService/BusinessParametersService.cs",
-      "linesofcode": 403,
-      "numbercommits": 63
-    },
-    {
-      "entity": "./Server/Application/Auctions/IAuctioningFacade.cs",
-      "linesofcode": 137,
-      "numbercommits": 62
-    },
-    {
-      "entity": "./Server/Hosts/Web.BEL/BootStrapper.cs",
-      "linesofcode": 294,
-      "numbercommits": 61
-    },
-    {
-      "entity": "./Versioning/versionspec.xml",
-      "linesofcode": 234,
-      "numbercommits": 56
-    },
-    {
-      "entity": "./Intranet/Web/UI/Agreements/AllocationAgreement/Default.aspx",
-      "linesofcode": 624,
-      "numbercommits": 56
-    },
-    {
-      "entity": "./Server/Domain/BusinessParameter/IBusinessParametersService.cs",
-      "linesofcode": 74,
-      "numbercommits": 53
-    },
-    {
-      "entity": "./Server/Hosts/Web.DEU/BootStrapper.cs",
-      "linesofcode": 258,
-      "numbercommits": 53
-    },
-    {
-      "entity": "./Server/Infrastructure/Rules/UnittestRules.cs",
-      "linesofcode": 220,
-      "numbercommits": 53
-    },
-    {
-      "entity": "./Server/Endpoints.BEL/TransmissionContractHandlerIntranet/Mapping/AutoMapperConfigurator.cs",
-      "linesofcode": 403,
-      "numbercommits": 48
-    },
-    {
-      "entity": "./Server/Endpoints/TransmissionContractHandlerTasksRest/AuctionManagementService.cs",
-      "linesofcode": 256,
-      "numbercommits": 45
-    },
-    {
-      "entity": "./Server/Endpoints.DEU/TransmissionContractHandlerIntranet/Mapping/AutoMapperConfigurator.cs",
-      "linesofcode": 383,
-      "numbercommits": 44
-    },
-    {
-      "entity": "./Server/Application/Requests/RequestFacade.cs",
-      "linesofcode": 424,
-      "numbercommits": 43
-    },
-    {
-      "entity": "./Server/Application/TransmissionServices/TransmissionServiceFacade.cs",
-      "linesofcode": 314,
-      "numbercommits": 41
-    },
-    {
-      "entity": "./Server/Endpoints/TransmissionContractHandlerIntranet/AgreementManagementService.cs",
-      "linesofcode": 590,
-      "numbercommits": 39
-    },
-    {
-      "entity": "./Extranet/Web/UI/Agreements/AllocationAgreements/AllocationAgreements.aspx.cs",
-      "linesofcode": 375,
-      "numbercommits": 38
-    },
-    {
-      "entity": "./Server/Endpoints.DEU/Connect/MessageHandler.cs",
-      "linesofcode": 16,
-      "numbercommits": 37
-    },
-    {
-      "entity": "./Server/Domain/Agreements/AllocationAgreement/AllocationAgreement.cs",
-      "linesofcode": 419,
-      "numbercommits": 36
-    },
-    {
-      "entity": "./Server/Endpoints/TransmissionContractHandlerIntranet/AuctioningManagementService.cs",
-      "linesofcode": 334,
-      "numbercommits": 35
-    },
-    {
-      "entity": "./Server/Application.DEU/Auctions/AuctioningFacade.cs",
-      "linesofcode": 166,
-      "numbercommits": 33
-    },
-    {
-      "entity": "./Server/Application/NotificationHandlers/ElectronicAllocationAgreements/ElectronicAllocationNotificationHandler.cs",
-      "linesofcode": 267,
-      "numbercommits": 33
-    },
-    {
-      "entity": "./Server/Endpoints.BEL/Connect/MessageHandler.cs",
-      "linesofcode": 16,
-      "numbercommits": 32
-    },
-    {
-      "entity": "./Contracts/Server-Intranet/DataContract/Commands/Command.cs",
-      "linesofcode": 170,
-      "numbercommits": 31
-    },
-    {
-      "entity": "./Server/Endpoints.BEL/TransmissionContractHandlerIntranet/BusinessPartyManagementService.cs",
-      "linesofcode": 451,
-      "numbercommits": 31
-    },
-    {
-      "entity": "./Intranet/Web/UI/Auctions/AuctionProductSetup/Default.aspx.cs",
-      "linesofcode": 563,
-      "numbercommits": 31
-    },
-    {
-      "entity": "./Server/Hosts/Web.DEU/AutofacPredefinedRegistrationConventions.cs",
-      "linesofcode": 294,
-      "numbercommits": 30
-    },
-    {
-      "entity": "./Server/Endpoints/TransmissionContractHandlerIntranet/TransmissionServiceManagementService.cs",
-      "linesofcode": 82,
-      "numbercommits": 30
-    },
-    {
-      "entity": "./Intranet/Web/UI/Agreements/AllocationAgreement/Default.aspx.designer.cs",
-      "linesofcode": 60,
-      "numbercommits": 30
-    },
-    {
-      "entity": "./Server/Endpoints/TransmissionContractHandlerIntranet/RequestManagementService.cs",
-      "linesofcode": 313,
-      "numbercommits": 29
-    }
-  ]
+  "children": [{
+    "entity": "./Domain/Auctions/Xml/Messages/ClassGenerator/msg_core.cs",
+    "linesofcode": 6968,
+    "numbercommits": 1
+  }, {
+    "entity": "./Application/Auctions/AuctioningFacade.cs",
+    "linesofcode": 3447,
+    "numbercommits": 71
+  }, {
+    "entity": "./Database.DEU/DAO/2018.12/Part04 - Harmonize/0403_113167_TNP_TABs.sql",
+    "linesofcode": 3100,
+    "numbercommits": 1
+  }, {
+    "entity": "./Domain/Auctions/Xml/Messages/ClassGenerator/core.xsd",
+    "linesofcode": 2925,
+    "numbercommits": 1
+  }, {
+    "entity": "./Resources/Services/AggregatingReceivingStationCapacityDistributionService/AggregatedReceivingStationCapacityDistributionService.cs",
+    "linesofcode": 2814,
+    "numbercommits": 2
+  }, {
+    "entity": "./Database.DEU/Schemas/02-MITHRA_DEU/Migrations/02-Parts/2018.12/2018.12.0403.00.113167.TNP_TABs.sql",
+    "linesofcode": 2280,
+    "numbercommits": 2
+  }, {
+    "entity": "./Application/Requests/AssignmentRequestFacade.cs",
+    "linesofcode": 1978,
+    "numbercommits": 25
+  }, {
+    "entity": "./Application.BEL/Requests/RequestFacade.cs",
+    "linesofcode": 1871,
+    "numbercommits": 7
+  }, {
+    "entity": "./Domain/Auctions/DomainServices/AuctionDomainService.cs",
+    "linesofcode": 1535,
+    "numbercommits": 38
+  }, {
+    "entity": "./Domain/Stocks/StockDomainService.cs",
+    "linesofcode": 1480,
+    "numbercommits": 75
+  }, {
+    "entity": "./Application/BusinessParties/BusinessPartyFacade.cs",
+    "linesofcode": 1206,
+    "numbercommits": 3
+  }, {
+    "entity": "./Application/Messages/MessageFacade.cs",
+    "linesofcode": 1041,
+    "numbercommits": 70
+  }, {
+    "entity": "./Domain/Auctions/DomainServices/DEU/AuctionDomainService.cs",
+    "linesofcode": 1037,
+    "numbercommits": 14
+  }, {
+    "entity": "./Application.DEU/Messages/MessageFacade.cs",
+    "linesofcode": 1000,
+    "numbercommits": 9
+  }, {
+    "entity": "./Domain/Auctions/Xml/Messages/ClassGenerator/msg.xsd",
+    "linesofcode": 928,
+    "numbercommits": 1
+  }, {
+    "entity": "./Application/QualityConversionH2L/QualityConversionH2LFacade.cs",
+    "linesofcode": 878,
+    "numbercommits": 1
+  }, {
+    "entity": "./Database.DEU/Schemas/02-MITHRA_DEU/Migrations/02-Parts/2018.12/2018.12.0202.00.112776.TAB.sql",
+    "linesofcode": 857,
+    "numbercommits": 1
+  }, {
+    "entity": "./Endpoints.BEL/Generic/CapacityService.cs",
+    "linesofcode": 781,
+    "numbercommits": 3
+  }, {
+    "entity": "./Application/Stocks/StockFacade.cs",
+    "linesofcode": 759,
+    "numbercommits": 15
+  }, {
+    "entity": "./Application/Requests/CapacityConversionRequestFacade.cs",
+    "linesofcode": 727,
+    "numbercommits": 19
+  }, {
+    "entity": "./Domain/Auctions/DomainServices/BEL/AuctionDomainService.cs",
+    "linesofcode": 721,
+    "numbercommits": 18
+  }, {
+    "entity": "./Application.BEL/TransmissionServices/TransmissionServiceFacade.cs",
+    "linesofcode": 712,
+    "numbercommits": 4
+  }, {
+    "entity": "./Tests/UnitTests.Domain/Requests/TradeNotification.Xml/GivenATradeNotificationXmlBase.cs",
+    "linesofcode": 708,
+    "numbercommits": 7
+  }, {
+    "entity": "./Database.DEU/Schemas/02-MITHRA_DEU/Migrations/02-Parts/2018.12/2018.12.1403.00.116720.TRGs.sql",
+    "linesofcode": 696,
+    "numbercommits": 1
+  }, {
+    "entity": "./Application.BEL/Agreements/MasterAgreementFacade.cs",
+    "linesofcode": 688,
+    "numbercommits": 1
+  }, {
+    "entity": "./Tests/IntegrationTests/Excel/TestScenarios/StockPooling/StockPoolingExamples.cs",
+    "linesofcode": 571,
+    "numbercommits": 22
+  }, {
+    "entity": "./Database.DEU/Schemas/02-MITHRA_DEU/Migrations/02-Parts/2018.12/2018.12.0404.00.113167.TNP_VIEWs.sql",
+    "linesofcode": 529,
+    "numbercommits": 2
+  }, {
+    "entity": "./Database.DEU/DAO/2018.12/Part04 - Harmonize/0404_113167_TNP_VIEWs.sql",
+    "linesofcode": 528,
+    "numbercommits": 1
+  }, {
+    "entity": "./Database.DEU/Schemas/02-MITHRA_DEU/Migrations/02-Parts/2018.12/2018.12.0402.00.113167.TNP_X_TABs.sql",
+    "linesofcode": 495,
+    "numbercommits": 2
+  }, {
+    "entity": "./Database.DEU/DAO/2018.12/Part04 - Harmonize/0402_113167_TNP_X_TABs.sql",
+    "linesofcode": 494,
+    "numbercommits": 1
+  }, {
+    "entity": "./Resources/Services/BusinessParametersService/BusinessParametersService.cs",
+    "linesofcode": 492,
+    "numbercommits": 13
+  }, {
+    "entity": "./Tests/UnitTests/Application/MessageHandler/WhenReceivingCapInfoMessages.cs",
+    "linesofcode": 477,
+    "numbercommits": 10
+  }, {
+    "entity": "./Domain/Stocks/Stock/InterconnectionPointStockPooling/InterconnectionPointStockPoolBuilder.cs",
+    "linesofcode": 449,
+    "numbercommits": 46
+  }, {
+    "entity": "./Endpoints/Generic/AuctionService.cs",
+    "linesofcode": 394,
+    "numbercommits": 35
+  }, {
+    "entity": "./Application/Requests/BalancedRouteFacade.cs",
+    "linesofcode": 426,
+    "numbercommits": 34
+  }, {
+    "entity": "./Application/NotificationHandlers/StarNotificationHandler.cs",
+    "linesofcode": 422,
+    "numbercommits": 29
+  }, {
+    "entity": "./Hosts/Web.BEL/BootStrapper.cs",
+    "linesofcode": 326,
+    "numbercommits": 27
+  }, {
+    "entity": "./Hosts/Web.DEU/BootStrapper.cs",
+    "linesofcode": 284,
+    "numbercommits": 25
+  }, {
+    "entity": "./Application/ErrorHandler/MessageErrorHandler.cs",
+    "linesofcode": 302,
+    "numbercommits": 24
+  }, {
+    "entity": "./Resources/MessageBus/MessageListener.cs",
+    "linesofcode": 413,
+    "numbercommits": 23
+  }, {
+    "entity": "./Application/Requests/OfferFacade.cs",
+    "linesofcode": 449,
+    "numbercommits": 19
+  }, {
+    "entity": "./Domain/Stocks/Stock/InterconnectionPointStock.cs",
+    "linesofcode": 292,
+    "numbercommits": 19
+  }, {
+    "entity": "./Application/Stocks/CapInfo/CapacityInfoMessageBuilder.cs",
+    "linesofcode": 339,
+    "numbercommits": 18
+  }, {
+    "entity": "./Application/NotificationHandlers/AuctionCapacityConversionsNotificationHandler.cs",
+    "linesofcode": 430,
+    "numbercommits": 18
+  }, {
+    "entity": "./Tests/IntegrationTests/Automation.Helpers/AutomationTestBase.cs",
+    "linesofcode": 121,
+    "numbercommits": 18
+  }, {
+    "entity": "./Hosts/Web.BEL/AutofacPredefinedRegistrationConventions.cs",
+    "linesofcode": 363,
+    "numbercommits": 17
+  }, {
+    "entity": "./Hosts/Web.DEU/AutofacPredefinedRegistrationConventions.cs",
+    "linesofcode": 349,
+    "numbercommits": 17
+  }, {
+    "entity": "./Application/NotificationHandlers/SendFCFSBookerNotInAllocationAgreementWarningNotificationHandler.cs",
+    "linesofcode": 179,
+    "numbercommits": 17
+  }, {
+    "entity": "./Tests/UnitTests/Application/CapInfo/WhenCalculatingCapacitiesForOutgoingCapInfoMessages.cs",
+    "linesofcode": 330,
+    "numbercommits": 17
+  }, {
+    "entity": "./Resources/Services/PriceCalculationService/PriceCalculationService.cs",
+    "linesofcode": 298,
+    "numbercommits": 16
+  }, {
+    "entity": "./Domain/Stocks/IStockDomainService.cs",
+    "linesofcode": 53,
+    "numbercommits": 16
+  }, {
+    "entity": "./Application/MessageHandler/Handlers/CapacityInfoMessageHandler.cs",
+    "linesofcode": 375,
+    "numbercommits": 16
+  }, {
+    "entity": "./Tests/UnitTests/Application/MessageFacade/FCFS/GivenFCFSBookingRequest.cs",
+    "linesofcode": 223,
+    "numbercommits": 15
+  }, {
+    "entity": "./Tests/UnitTests/Application/MessageFacade/FCFS/GivenAvailabilityRequest.cs",
+    "linesofcode": 244,
+    "numbercommits": 15
+  }, {
+    "entity": "./Application/MessageHandler/Handlers/LinkedContractsRequestMessageHandler.cs",
+    "linesofcode": 158,
+    "numbercommits": 15
+  }, {
+    "entity": "./Infrastructure/Rules/UnittestRules.cs",
+    "linesofcode": 235,
+    "numbercommits": 14
+  }, {
+    "entity": "./Tests/IntegrationTests/Automation/Prisma/FCFSAlternativeProposalAcceptedTest.cs",
+    "linesofcode": 222,
+    "numbercommits": 14
+  }, {
+    "entity": "./Application/Requests/RequestFacade.cs",
+    "linesofcode": 476,
+    "numbercommits": 13
+  }, {
+    "entity": "./Infrastructure/Rules/RuleCode.cs",
+    "linesofcode": 257,
+    "numbercommits": 12
+  }, {
+    "entity": "./Domain/BusinessParameter/IBusinessParametersService.cs",
+    "linesofcode": 91,
+    "numbercommits": 12
+  }, {
+    "entity": "./Tests/IntegrationTests/Automation/Prisma/AuctioningBookingRequestAcceptedTest.cs",
+    "linesofcode": 390,
+    "numbercommits": 12
+  }, {
+    "entity": "./Application/Auctions/IAuctioningFacade.cs",
+    "linesofcode": 128,
+    "numbercommits": 12
+  }, {
+    "entity": "./Domain/Requests/BusinessRules/BalancedRoutesDealIdRuleValidatorBase.cs",
+    "linesofcode": 263,
+    "numbercommits": 12
+  }, {
+    "entity": "./Domain/Stocks/VIPStockCalculator.cs",
+    "linesofcode": 260,
+    "numbercommits": 12
+  }, {
+    "entity": "./Resources/Services/MessageService/MessageSenderService.cs",
+    "linesofcode": 205,
+    "numbercommits": 12
+  }, {
+    "entity": "./Application/MessageHandler/MessageHandlerBase.cs",
+    "linesofcode": 138,
+    "numbercommits": 12
+  }, {
+    "entity": "./Tests/IntegrationTests/Automation/Prisma/FCFSInitialProposalAcceptedTest.cs",
+    "linesofcode": 217,
+    "numbercommits": 11
+  }, {
+    "entity": "./Tests/IntegrationTests/Automation.Helpers/MemoryBootstrapper.cs",
+    "linesofcode": 104,
+    "numbercommits": 11
+  }]
 }
 
