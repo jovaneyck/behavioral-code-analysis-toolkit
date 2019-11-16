@@ -4,6 +4,10 @@ Behavioral code analysis toolkit
 A collection of scripts in varying programming languages to get started on behavioral code analysis.
 Full credit for these techniques goes to [Adam Tornhill](https://www.adamtornhill.com/).
 
+Example output
+---
+* [hotspot analysis](https://jovaneyck.github.io/mithra-dataviz)
+
 Further reading
 ---
 
