@@ -10,7 +10,7 @@ Getting started
 * Gather complexity information of your codebase using [cloc](https://github.com/AlDanial/cloc): `cloc --by-file --csv "." > cloc.csv`
 * Extract your version control log data as documented on [code-maat](https://github.com/adamtornhill/code-maat#generating-input-data): `git log --all --numstat --date=short --pretty=format:"--%h--%ad--%aN" --no-renames --after=2019-01-01`
 * Feed version control output to code-maat: `//λ java -jar code-maat-1.1-SNAPSHOT-standalone.jar -c git2 -l "git.log" > codemaat-results.csv`
-* You can use the provided F# scripts to generate charts & d3js data. A good place to start is hotspot analysis in [hotspot.fsx](https://github.com/jovaneyck/behavioral-code-analysis-toolkit/blob/master/fsharp/scripts/hotspots.fsx).
+* You can use the provided F# scripts to generate charts & d3js data. A good place to start is hotspot analysis in [hotspot.fsx](https://github.com/jovaneyck/behavioral-code-analysis-toolkit/blob/master/fsharp/scripts/hotspots.fsx). Here's a great introduction on [executing & experimenting with F# (fsx) scripts](https://brandewinder.com/2016/02/06/10-fsharp-scripting-tips/)
 * You can render generated d3js data using the [d3js html](https://github.com/jovaneyck/behavioral-code-analysis-toolkit/blob/master/dataviz-d3js/index.html).
 
 Example output
